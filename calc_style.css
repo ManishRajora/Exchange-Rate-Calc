@@ -15,6 +15,7 @@ body{
 }
 
 .container{
+    width: 400px;
     display: flex;
     flex-direction: column;
     align-items: baseline;
@@ -34,6 +35,7 @@ p{
 }
 
 .currency{
+    width: 90%;
     margin: 25px;
     display: flex;
     align-items: center;
@@ -54,7 +56,6 @@ p{
     text-align: right;
 }
 
-
 .swap_btn{
     background-color: green;
     color: white;
@@ -66,7 +67,7 @@ p{
 }
 
 .swap_currency{
-    width: 82%;
+    width: 86%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -74,11 +75,16 @@ p{
 
 #rate{
     color: green;
-    font-size: medium;
+    font-size: small;
     text-align: right;
-    background-color: white;
 }
 
 select:focus, input:focus{
     outline: 0;
+}
+
+@media(max-width: 600px){
+    .currency input{
+        width: 200px;
+    }
 }
