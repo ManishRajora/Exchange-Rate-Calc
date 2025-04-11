@@ -10,12 +10,13 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     padding: 20px;
 }
 
 .container{
-    width: 400px;
+    width: 100%;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
     align-items: baseline;
@@ -23,11 +24,14 @@ body{
 }
 
 .money_img{
-    width: 200px;
+    width: 50%;
+    max-width: 200px;
+    align-self: center;
 }
 
 h1{
     color: green;
+    text-align: center;
 }
 
 p{
@@ -88,3 +92,4 @@ select:focus, input:focus{
         width: 200px;
     }
 }
+
